@@ -1,0 +1,13 @@
+program4 = [
+    start:
+        "LI 3 1"
+        "LI 5 10"
+    count_loop:
+        "BEQ 3, 5, done"
+        "JAL increment"
+        "J count_loop"
+    increment:
+        "ADD 3 3 1"
+    done:
+    j done
+]
